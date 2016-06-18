@@ -190,8 +190,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oab-Xp-Yda">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="ADv-RE-jSc"/>
+                                    <constraint firstAttribute="height" constant="580" id="Xxr-NM-Cdj"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Zhg-AD-tDo"/>
                                 </connections>
@@ -268,16 +272,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Oab-Xp-Yda" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0Hr-IY-yPv"/>
                             <constraint firstItem="GO6-lt-FJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Es-SC-1ql"/>
-                            <constraint firstItem="Oab-Xp-Yda" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bpq-9P-67L"/>
+                            <constraint firstItem="Oab-Xp-Yda" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6N4-2B-PzM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oab-Xp-Yda" secondAttribute="bottom" id="SAb-Fg-CTh"/>
                             <constraint firstItem="GO6-lt-FJ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SKD-o4-Zz1"/>
                             <constraint firstItem="GO6-lt-FJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="U5x-Lj-j1M"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oab-Xp-Yda" secondAttribute="bottom" id="XTT-bX-Bk4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GO6-lt-FJ7" secondAttribute="trailing" constant="-20" id="ZVv-rw-o4X"/>
-                            <constraint firstAttribute="trailing" secondItem="Oab-Xp-Yda" secondAttribute="trailing" id="car-tf-7lI"/>
                             <constraint firstItem="GO6-lt-FJ7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="iFc-qS-R84"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GO6-lt-FJ7" secondAttribute="bottom" id="k2E-r0-fu9"/>
-                            <constraint firstItem="Oab-Xp-Yda" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qMg-zY-RDG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oab-Xp-Yda" secondAttribute="trailing" constant="-20" id="kb6-Uv-hXF"/>
                         </constraints>
                     </view>
                     <connections>

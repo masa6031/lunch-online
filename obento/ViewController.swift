@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         
-        let url:NSURL = NSURL(string: "http://tryworks-design.ciao.jp/webtest.html")!
+//        let url:NSURL = NSURL(string: "http://tryworks-design.ciao.jp/webtest.html")!
+        let url: NSURL = NSURL(string: "http://www.lunch-online.com/app/logon")!
         let request:NSURLRequest = NSURLRequest(URL:url)
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
         print("indicator off")
         let url = webView.stringByEvaluatingJavaScriptFromString("document.URL")
         print(url)
-        
+       /*
         if(url == "http://tryworks-design.ciao.jp/webtest2.html?" ) {
             lockView.hidden = true
             logonBtn.hidden = true
@@ -80,6 +81,16 @@ class ViewController: UIViewController {
             lockView.hidden = false
             logonBtn.hidden = false
             settingBtn.hidden = false
+        }
+        */
+        if(url == "http://www.lunch-online.com/app/logon" ) {
+            lockView.hidden = false
+            logonBtn.hidden = false
+            settingBtn.hidden = false
+        } else {
+            lockView.hidden = true
+            logonBtn.hidden = true
+            settingBtn.hidden = true
         }
     }
     
