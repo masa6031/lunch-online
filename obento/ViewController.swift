@@ -49,6 +49,13 @@ class ViewController: UIViewController {
     
     @IBAction func tapLoginBtn(sender: AnyObject) {
         
+        if id == "" || pass == "" {
+            if let viewController = storyboard?.instantiateViewControllerWithIdentifier("settingViewController")
+                as? SettingViewController {
+                self.presentViewController(viewController, animated: true, completion: nil);
+            }
+        }
+        
         var reqText:String = "document.getElementById('chumonshacd').value='"+id+"';"
         reqText = reqText+"document.getElementById('password').value='"+pass+"';"
         reqText = reqText+"var form = document.forms.item(0);form.submit();"

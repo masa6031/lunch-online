@@ -22,6 +22,9 @@ class SettingViewController: UIViewController ,UITextFieldDelegate{
         idTextField.delegate = self
         passTextField.delegate = self
         
+        //パスワード表示にする
+        passTextField.secureTextEntry = true
+        
         //ID呼び出し
         if let id = userDefaults.stringForKey("id") {
             idTextField.text = id
@@ -50,12 +53,20 @@ class SettingViewController: UIViewController ,UITextFieldDelegate{
        let id = idTextField.text
         let pass = passTextField.text
         
-        if(id != "" && pass != "" ){
+        if id != "" {
             userDefaults.setObject(id, forKey: "id")
-            userDefaults.setObject(pass, forKey: "pass")
-            userDefaults.synchronize()
         }
         
+        if pass != "" {
+            userDefaults.setObject(pass, forKey: "pass")
+        }
+        userDefaults.synchronize()
+        
+        //キーボードを閉じる
+        self.view.endEditing(true)
+        
+        //戻る
+        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
 

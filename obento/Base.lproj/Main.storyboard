@@ -9,7 +9,7 @@
         <!--Setting View Controller-->
         <scene sceneID="DUm-hy-qI2">
             <objects>
-                <viewController id="ObT-nT-73H" customClass="SettingViewController" customModule="obento" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingViewController" id="ObT-nT-73H" customClass="SettingViewController" customModule="obento" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oNS-6s-hKj"/>
                         <viewControllerLayoutGuide type="bottom" id="CIl-In-1OT"/>
@@ -175,7 +175,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ag-KB-Qhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nTn-vd-gQT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="378"/>
+            <point key="canvasLocation" x="1008" y="352"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -228,7 +228,7 @@
                                             <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ObT-nT-73H" kind="modal" id="JTn-HO-c2r"/>
+                                            <segue destination="ObT-nT-73H" kind="modal" identifier="" id="JTn-HO-c2r"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch Online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-ha-Oxz">
